@@ -1,10 +1,10 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouteObject } from 'react-router-dom';
 import Home from './Routes/Home';
 import Search from './Routes/Search';
 import App from './App';
 import Modal from './components/molecules/Modal';
 
-export const Router = createBrowserRouter([
+const routerConfig: RouteObject[] = [
     {
         path: '/',
         element: <App />,
@@ -17,4 +17,5 @@ export const Router = createBrowserRouter([
             },
         ],
     },
-]);
+];
+export const Router = createBrowserRouter(routerConfig, { basename: process.env.PUBLIC_URL });
