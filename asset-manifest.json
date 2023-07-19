@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/framer_motion/static/js/main.17af7a08.js",
+    "static/js/787.0904c1f0.chunk.js": "/framer_motion/static/js/787.0904c1f0.chunk.js",
+    "index.html": "/framer_motion/index.html",
+    "main.17af7a08.js.map": "/framer_motion/static/js/main.17af7a08.js.map",
+    "787.0904c1f0.chunk.js.map": "/framer_motion/static/js/787.0904c1f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.17af7a08.js"
+  ]
+}
