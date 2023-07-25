@@ -9,6 +9,7 @@ import { useRecoilState } from 'recoil';
 import { combinedDataState } from '../modules/atom';
 import { BiPlay } from 'react-icons/bi';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
+import Loading from '../components/atoms/Loading';
 const Wrapper = styled.div`
     background: black;
     overflow-x: hidden;
@@ -127,7 +128,9 @@ export default function Home() {
     return (
         <Wrapper>
             {!combinedData ? (
-                <Loader>loading..</Loader>
+                <Loader>
+                    <Loading />
+                </Loader>
             ) : (
                 <>
                     <Banner bgphoto={makeImagePath(nowPlayingData?.results[0].backdrop_path || '')}>

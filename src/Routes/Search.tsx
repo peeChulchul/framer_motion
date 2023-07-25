@@ -7,6 +7,7 @@ import SearchCard from '../components/atoms/SearchCard';
 import { useRecoilState } from 'recoil';
 import { searchDataState, searchPageState } from '../modules/atom';
 import Pageination from '../components/molecules/Pagenation';
+import Loading from '../components/atoms/Loading';
 
 const Container = styled.div`
     padding: 6rem;
@@ -78,7 +79,7 @@ export default function Search() {
         <Container>
             <KeywordInfo>"{keyword}"으로 검색한 결과입니다.</KeywordInfo>
             {isLoading ? (
-                <>로딩중</>
+                <Loading />
             ) : data.results.length === 0 ? (
                 <KeywordInfo>검색결과가 없습니다.</KeywordInfo>
             ) : (
