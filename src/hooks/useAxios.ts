@@ -17,7 +17,7 @@ interface useAxiosReturn {
 }
 
 export const axiosInstance = axios.create({
-    baseURL: 'https://silo9506.herokuapp.com/https://api.themoviedb.org/3/',
+    baseURL: 'https://api.themoviedb.org/3/',
     params: {
         method: 'get',
         api_key: process.env.REACT_APP_TMDB_KEY,
